@@ -11,9 +11,10 @@ public class Cheers {
                 for (int i =0; i < wordToSpell.length(); i++){
                         // first checks if has to print "an" or "a" according to the task
                         if (validationLetters.indexOf(wordToSpell.charAt(i)) == -1){
-                                System.out.println("Give me a:  " + wordToSpell.charAt(i) + "!");
+                                System.out.println("Give me a  " + + wordToSpell.charAt(i) +
+                                ": " + wordToSpell.charAt(i) + "!");
                         } else {
-                                System.out.println("Give me an: " + wordToSpell.charAt(i) + "!");
+                                System.out.println("Give me an " + wordToSpell.charAt(i) + ": " + wordToSpell.charAt(i) + "!");
                         }
                         
                 }
