@@ -8,6 +8,7 @@ public class Collatz {
 			boolean firstStep = true;
 			int seed = i;
 			String hailstoneSeq = seed + " ";
+			int steps = 1;
 
 			while (seed != 1 || firstStep) {
 				firstStep = false;
@@ -17,10 +18,11 @@ public class Collatz {
 					seed = seed * 3 + 1;
 				}
 				hailstoneSeq += seed + " ";
+				steps++;
 			}
 
 			if (mode.equals("v")) {
-				System.out.println(hailstoneSeq);
+				System.out.println(hailstoneSeq + "(" + steps + ")");
 			}
 		}
 
